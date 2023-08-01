@@ -27,19 +27,19 @@ class ConfigurationManager {
 int main() {
     ConfigurationManager& config1 = ConfigurationManager::createInstance();
     ConfigurationManager& config2 = ConfigurationManager::createInstance();
-   // string name1, name2;
-    // cout << "Enter name 1 : ";
-    // cin >> name1;
-    // cout << "Enter name 2 : ";
-    // cin >> name2;
-    // config1.setSetting("key1", name1);
-    // config2.setSetting("key2", name2);
+    string name1, name2;
+    cout << "Enter name 1 : ";
+    cin >> name1;
+    cout << "Enter name 2 : ";
+    cin >> name2;
+    config1.setSetting("key1", name1);
+    config2.setSetting("key2", name2);
 
-    // cout << config1.getSetting("maurya") << endl;
-    // cout << config1.getSetting("key1") << endl;
+    cout << config1.getSetting("maurya") << endl;
+    cout << config1.getSetting("key1") << endl;
     cout << &config1<< endl;
     cout << &config2 << endl;
-    //cout << config2.getSetting("key2") << endl;
+    cout << config2.getSetting("key2") << endl;
 
   return 0;
 }
