@@ -1,11 +1,14 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
+//  struct Flags {
+//        bool flag1 : 1; // Use 1 bit to store this flag
+//        bool flag2 : 1; // Use 1 bit to store this flag
+//        // ...
+//    }s;
 int main() {
     char choice {};
     vector<double> vec {};
-
     do {
     cout << "Enter your choice\n\n"
          << "P - Print numbers\n"
@@ -87,5 +90,7 @@ int main() {
             cout << "Unknown selection, please try again" << endl;        
     }
     } while(choice != 'q' && choice != 'Q');
+
+    return 0;
     
 }
